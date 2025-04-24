@@ -1,0 +1,240 @@
+/* 🔹 Estilos Globais */
+.about-container {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+/* 🔹 Cabeçalho com Carrossel */
+.about-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.header-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.header-text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 🔹 Nossa História */
+.about-history {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-history h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1e88e5;
+}
+
+.about-history p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 🔹 Estatísticas dinâmicas */
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background: #1e88e5;
+    color: white;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.stat h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 🔹 Benefícios */
+.about-benefits {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about-benefits h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #1e88e5;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #1e88e5;
+}
+
+.benefit-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 🔹 Nossa Equipe */
+.about-team {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f9;
+}
+
+.about-team h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1e88e5;
+}
+
+.about-team p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 🔹 Call to Action */
+.about-cta {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1e88e5;
+    color: white;
+}
+
+.about-cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #ffcc00;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #ffa500;
+    transform: scale(1.05);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

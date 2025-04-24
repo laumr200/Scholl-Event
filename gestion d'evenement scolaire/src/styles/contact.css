@@ -1,0 +1,197 @@
+/* 🌟 Container Geral */
+.contact-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Efeito Fade-in */
+.contact-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🏆 Cabeçalho */
+.contact-header h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 📌 Seção de Informações e Formulário */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* 📌 Informações de Contato */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 🔗 Redes Sociais */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #1e88e5;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* 📝 Formulário de Contato */
+.contact-form {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs e Textarea */
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: #fdfdfd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 12px rgba(30, 136, 229, 0.3);
+    transform: scale(1.02);
+}
+
+/* Botão */
+.contact-form button {
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    color: white;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #1565c0, #0D47A1);
+    transform: scale(1.07);
+}
+
+/* ✅ Mensagem de Sucesso */
+.success-message {
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 🚀 Mapa */
+.contact-map {
+    margin-top: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contact-map h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

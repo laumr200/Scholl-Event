@@ -1,0 +1,67 @@
+
+  
+  /* Section principale des événements */
+  .event-detail-container {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 150px;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    flex-grow: 1; /* Permet d'utiliser l'espace restant pour la page */
+  }
+  
+  /* Titre de l'événement */
+  .event-detail-container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #1e88e5; /* Couleur principale de l'application */
+  }
+  
+  /* Détails de l'événement */
+  .event-detail-container p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Section du bouton de retour */
+  .event-detail-container .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .event-detail-container .back-button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Assurez-vous que le footer et le top sont visibles */
+  footer, header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 20px;
+    }
+  
+    .event-detail-container {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+/* Style global pour le conteneur principal */
+.events-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 150px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Style du titre */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style de l'input et du bouton de recherche */
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Style du tableau des événements */
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .event-table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .event-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .event-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Style du bouton d'annulation */
+  button.annuler-button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button.annuler-button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Style des messages de chargement, erreur et absence d'événements */
+  .loading,
+  .error-message,
+  .no-events {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  .no-events {
+    color: #007bff;
+  }
+  

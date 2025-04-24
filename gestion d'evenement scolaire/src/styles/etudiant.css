@@ -1,0 +1,101 @@
+/* Conteneur principal */
+.etudiant-container {
+    padding: 170px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Boutons de navigation */
+  .etudiant-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .etudiant-actions button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .etudiant-actions button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Barre de recherche */
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-container button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Liste des événements */
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Carte des événements */
+  .event-card {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .etudiant-actions {
+      flex-direction: column;
+    }
+  
+    .search-container input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

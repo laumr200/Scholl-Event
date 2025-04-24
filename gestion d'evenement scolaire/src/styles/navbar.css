@@ -1,0 +1,207 @@
+/* 🔹 NAVBAR ESTILIZADA */
+.navbar {
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito quando rolar a página */
+.navbar.scrolled {
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #1976D2, #0D47A1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Container da Navbar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* 🔹 Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+/* 🔹 Links do Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+/* Estilizando os Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* 🔥 Efeito de Underline animado */
+.nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* 🔹 Botão CTA */
+.cta-button {
+    background: #ffcc00;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #ffa500;
+    transform: scale(1.05);
+}
+
+/* 🔹 Menu Hambúrguer (Responsivo) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Transforma o hambúrguer em um "X" */
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* 🔹 Menu Mobile Overlay */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+/* Mostra o menu quando ativo */
+.menu-overlay.active {
+    display: block;
+}
+
+/* Ajuste dos itens dentro do menu */
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-overlay ul li {
+    padding: 12px 0;
+}
+
+/* 🔹 Ajuste para os links */
+.menu-overlay ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.menu-overlay ul a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-overlay {
+        display: none;
+    }
+
+    .menu-overlay.active {
+        display: flex;
+    }
+}

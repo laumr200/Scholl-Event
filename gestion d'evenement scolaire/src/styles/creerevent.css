@@ -1,0 +1,79 @@
+
+  
+  /* Formulaire d'événement */
+  .create-event-form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Champs du formulaire */
+  .create-event-form input,
+  .create-event-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Bouton du formulaire */
+  .create-event-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .create-event-form button:hover {
+    background-color: #1565c0;
+  }
+  
+ 
+    .create-event-form {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .create-event-form input,
+    .create-event-form textarea {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .create-event-form button {
+      padding: 10px;
+    }
+  
+  
+  
+  /* Message de succès ou d'erreur */
+  .success-message,
+  .error-message {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .create-event-container{
+    padding: 80px;
+    text-align: center;
+  }
