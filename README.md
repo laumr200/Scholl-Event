@@ -5,6 +5,7 @@ The School Event Management System is a modern web application designed to simpl
 This platform centralizes the management of events such as conferences, workshops, competitions, open houses, and more, offering an intuitive interface for both students and administrators.
 
 ⚙️ Key Features
+
 👨‍💼 Administrator:
 
 Create, update, or delete events.
@@ -18,6 +19,7 @@ View registration statistics.
 Manage student registrations.
 
 🎓 Student:
+
 Browse upcoming events.
 
 Filter events by category or date.
@@ -29,6 +31,7 @@ View the list of events they are registered for.
 Cancel a registration if needed.
 
 🛠️ Technologies Used
+
 Frontend: React / Next.js with Redux and TailwindCSS for a responsive interface.
 
 Backend: Node.js with Express.js.
@@ -40,6 +43,7 @@ Security: Authentication with JWT.
 Testing: API testing using Postman.
 
 🎯 Project Goals
+
 Enhance organization and communication around school events.
 
 Encourage student engagement and participation.
